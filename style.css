@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #eef1f5;
+  padding: 24px;
+  color: #1f2937;
+}
+
+.app-window {
+  max-width: 1120px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.12);
+  overflow: hidden;
+  border: 1px solid #d1d5db;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+.brand-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-box {
+  font-weight: 800;
+  color: #1d4ed8;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-right: 1px solid #e5e7eb;
+  padding-right: 16px;
+}
+
+.page-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.emp-id {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.main-layout {
+  display: flex;
+  min-height: 520px;
+}
+
+.sidebar {
+  width: 195px;
+  background: #f9fafb;
+  border-right: 1px solid #e5e7eb;
+  padding: 16px 10px;
+  flex-shrink: 0;
+}
+
+.nav-item {
+  display: block;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #374151;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-item.active {
+  background: #e0ecff;
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.nav-item:hover {
+  background: #f3f4f6;
+}
+
+.content-area {
+  flex: 1;
+  padding: 20px 24px;
+  background: #f8fafc;
+}
+
+.profile-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 18px;
+}
+
+.identity-section {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 18px;
+  align-items: flex-start;
+}
+
+.photo-box {
+  width: 135px;
+  height: 165px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #f1f5f9;
+  flex-shrink: 0;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bio-table {
+  border-collapse: collapse;
+  font-size: 13.5px;
+  line-height: 1.7;
+}
+
+.bio-table td {
+  padding: 2px 6px 2px 0;
+  vertical-align: top;
+}
+
+.bio-label {
+  color: #374151;
+  font-weight: 500;
+  width: 155px;
+}
+
+.bio-colon {
+  width: 14px;
+  font-weight: 700;
+}
+
+.bio-value {
+  color: #111827;
+  font-weight: 600;
+}
+
+.section-banner {
+  background: #1e467a;
+  color: #ffffff;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 7px 12px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  background: #ffffff;
+}
+
+table.data-table th {
+  background: #f1f5f9;
+  color: #1e293b;
+  font-weight: 700;
+  text-align: left;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+}
+
+table.data-table td {
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  color: #1f2937;
+}
+
+.doc-link {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.doc-link:hover {
+  text-decoration: underline;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.stat-card {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 12px;
+  background: #ffffff;
+}
+
+.stat-label {
+  font-size: 11.5px;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e467a;
+}
+
+.exp-box {
+  border: 1px solid #cbd5e1;
+  border-top: none;
+  padding: 10px 12px;
+  font-size: 12.5px;
+  line-height: 1.75;
+  background: #ffffff;
+}
+
+.footer-note {
+  padding: 10px 24px;
+  font-size: 11.5px;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .identity-section,
+  .summary-grid {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+}
